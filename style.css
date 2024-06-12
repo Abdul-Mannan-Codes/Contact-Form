@@ -1,0 +1,101 @@
+body{
+    background-color: #000000;
+    color:white;
+    padding:60px;
+    /* border:1px dotted #94d2bd; */
+}
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.container{
+    margin:auto;
+    /* margin-top:15vh; */
+    width:70vh;
+    height:100vh;
+    justify-content:center;
+    /* border:1px solid #e9d8a6; */
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.text-info{
+    font-size:11px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+}
+.logo{
+    border-radius: 50%;
+    background-color:#94d2bd;
+    height:10vh;
+    width:10vh;
+    justify-content: space-around;
+    align-items: center;
+    display:flex;
+    color:black;
+    margin:auto;
+}
+h4{
+    color:#94d2bd;
+    margin-bottom:0px;
+}
+.info{
+    width:20vh;
+    /* border:1px double #94d2bd; */
+    margin:0px 10px;
+}
+.form-page{
+    display:flex;
+    flex-wrap: wrap;
+    width:70vh;
+    justify-content:center;
+    /* border:1px solid #94d2bd; */
+}
+.form-elements-size{
+    width:70vh;
+    height:25px;
+    margin:10px 0px;
+    border-radius:3px;
+    border:none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+}
+.inputs{
+    background-color: #1C1C1C;
+    padding:10px;
+}
+.send-button{
+    background-color:#94d2bd;
+    font-size:12px;
+    text-transform:uppercase;
+    padding:10px;
+    font-weight:bold;
+    padding-bottom:22px;
+    cursor:pointer;
+    width:73vh;
+    color:#000000;
+}
+.contact-form{
+    padding:10px;
+    /* border:1px solid #94d2bd; */
+}
+.send-button:hover{
+    background-color:#e9d8a6;
+}
+#message{
+    height:20vh;
+    background-color:#1C1C1C;
+    padding:10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    resize: none;
+}
+.get-in-touch{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    font-size:20px;
+}
+a{
+    color:white;
+}
