@@ -99,3 +99,152 @@ h4{
 a{
     color:white;
 }
+/* grids */
+.body2{
+    background-color: #fff;
+    padding:0px;
+}
+.grid-container{
+    width:1200px;
+    height:56vh;
+    margin:auto;
+    /* border:2px solid black; */
+    /* padding:10px; */
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    /* justify-content: center; */
+    /* background-color: #283618; */
+    row-gap: 10px;
+    gap:10px;
+}
+.grid-items{
+    /* height: 25vh;
+    width:24vh; */
+    /* border:1px solid #1C1C1C; */
+    /* margin:2vh; */
+    background-color: #fefae0;
+    background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg");
+    cursor:pointer;
+    background-size: cover;
+}
+.item-1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url("https://b.zmtcdn.com/data/pictures/4/20627254/7fd28fdd0de1c1087dafbd973152d07d.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*");
+}
+.grid-items:hover{
+    background-size:auto;
+}
+.item-2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url("https://b.zmtcdn.com/data/pictures/4/20627254/e3f80c48857e12fcb53f8fa4936e76d0.jpg?output-format=webp&fit=around|300:273&crop=300:273;*,*");
+/*     width:28vh;
+    height:28vh; */
+    /* margin-left:15px; */
+}
+.item-3{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url("https://b.zmtcdn.com/data/pictures/4/20627254/3600b0be119af5ff2de7adfca1304649.jpg?output-format=webp&fit=around|300:273&crop=300:273;*,*");
+    /* width:28vh;
+    height:28vh; */
+    /* margin-left:15px; */
+
+}
+.item-4{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url("https://b.zmtcdn.com/data/pictures/chains/4/20627254/ac3fbb1cd72faa4463aa2431db613aaf.jpg?output-format=webp&fit=around|300:273&crop=300:273;*,*");
+    background-repeat:no-repeat;
+    margin-left:0px;
+    color:black;
+    opacity:70%;
+    text-shadow:1px 1px 1px black;
+}
+.gallery-text{
+    opacity:100%;
+    text-align:center;
+}
+.item-4:hover{
+    background-size:cover;
+}
+.zomato{
+    color:red;
+    font-size:100px;
+    text-align:center;
+    /* border:1px solid; */
+    margin:0px 0px 30px 0px;
+    text-transform:uppercase;
+    letter-spacing: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+} 
+hr{
+    margin:20px auto;
+    border:2px solid darkred;
+    width:80%;
+}
+.demon-slayers{
+    text-align:center;
+    text-transform: uppercase;
+    color:#660000;
+    font-size:100px;
+    margin-bottom:0px;
+}
+.grid-container2{
+    height:450px;
+    width:750px;
+    /* border:1px solid black; */
+    margin:auto;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    gap:20px;
+    margin-bottom:30px;
+}
+/* .grid2-items{
+    border:1px solid green;
+} */
+.item2-1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-image: url("images/kny2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item2-2{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    background-image: url("images/nezuko.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item2-3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url("images/zenitsu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item2-4{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-image: url("images/Demon-Slayer-Logo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item2-5{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    background-image: url("images/inosuke.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-line{
+    margin-top: 2px;
+    border:2px solid #660000;
+    width:80%;
+}
