@@ -16,7 +16,7 @@ h3{
 .container{
     margin:auto;
     /* margin-top:15vh; */
-    width:70vh;
+    width:30vw;
     height:100vh;
     justify-content:center;
     /* border:1px solid #e9d8a6; */
@@ -251,4 +251,9 @@ hr{
     margin-top: 2px;
     border:2px solid #660000;
     width:80%;
+}
+@media only screen and (max-width:768px){
+    .container{
+        width:100vw;
+    }
 }
