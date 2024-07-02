@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -43,12 +46,21 @@
             <h2 class="get-in-touch"> get in touch with us </h2>
             <form class="contact-form">
                 <input name="Name" id="name" placeholder="Name" type="text" class="inputs form-elements-size" required>
-                <input name="Email" id="email" placeholder="Email" type="email" class="inputs form-elements-size" required>
-                <input name="Subject" id="subject" placeholder="Subject" type="text" class="inputs form-elements-size" required>
+                <span class="warning-text" id="invalid-name"></span>
+                <input name="Email" id="email" placeholder="Email" type="email" class="inputs form-elements-size" onclick="return validate()" required>
+                <span class="warning-text" id="invalid-email"></span>
+                <input name="Password" id="password" placeholder="Password" type="password" class="inputs form-elements-size" onclick="return validate()" required>
+                <span class="warning-text" id="invalid-pw"></span>
+                <input name="ConfirmPassword" id="confirmpassword" placeholder="Confirm Password" type="password" class="inputs form-elements-size" onclick="return validate()" required>
+                <span class="warning-text" id="invalid-pw2"></span>
+                <input name="PhoneNumber" id="phonenumber" placeholder="Contact Number" type="number" class="inputs form-elements-size" onclick="return validate()" required>
+                <span class="warning-text" id="invalid-number"></span>
+                <input name="Subject" id="subject" placeholder="Subject" type="text" class="inputs form-elements-size" onclick="return validate()" required>
                 <textarea name="Message" id="message" placeholder="Message" type="text" class="form-elements-size" required></textarea>
-                <input type="submit" class="send-button form-elements-size" value="send message">
+                <input type="submit" class="send-button form-elements-size" value="send message" onclick="return validate()">
             </form>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
